@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -f /tmp/file1.txt ] 2> /dev/null
+then
+        sed '22s/Incorrect/Correct/' /var/www/html/index.html -i
+        sed '23s/0/1/'
+else
+        :
+fi
