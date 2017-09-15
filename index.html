@@ -1,16 +1,106 @@
-echo "Hello world" > /var/www/html/index.html
+<!DOCTYPE html>
+<html>
+<head>
+<img src="Logo.png" alt="Mountain View" style="width:304px;height:300px;" <h1>Logo</h1>
 
-#!/bin/bash
-RESULT=$(find /home/ -type d -name bob)
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
 
-if [ $RESULT == "/home/bob"  ]
-then
-        echo "<h5>1, The user bob created </h5>"   >> /var/www/html/index.html 2>/dev/null
-else
-        echo "<h5>0, The user bob is not created </h5> " >> /var/www/html/index.html 2>/dev/null
-fi
+<table style="width:100%">
+  <tr>
+    <th><h1>Tasks</h1></th>
+    <th>Results</th>
+    <th>Score</th>
+  </tr>
+  <tr>
+    <td>Task 1.Create empty file called "file1.txt" in /tmp folder </td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Task 2.Create a directory called "docs" in /tmp folder</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Task 3. Get top 10 lines from /etc/services and save it under /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 4. Copy /etc/passwd file and save it under root /root/users.txt</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 5. Get top 10 lines from /etc/services and save it under /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 6. Create the following folders /university/faculty/class /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 7. Save the content of /root/saved.top with the number lines into /root/numbered.txt (cat -n)
+ /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 8. Copy saved.bottom file to /media folder /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 9. Create file called “jump” and move it to /mnt /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 10.  /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 11.  /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 12.  /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 13. /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 14. /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        <tr>
+    <td>Task 15. Get top 10 lines from /etc/services and save it under /root/saved.top</td>
+    <td>Incorrect</td>
+    <td>0</td>
+  </tr>
+        
+</table>
 
-echo "<h5> The Date is $(date +%D) </h5>"   >> /var/www/html/index.html 2>/dev/null
+
+
+
+
+
 
 
 
