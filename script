@@ -1,8 +1,8 @@
 #!/bin/bash
 if [ -f /tmp/file1.txt ] 2> /dev/null
 then
-        sed '22s/Incorrect/Correct/' /var/www/html/index.html -i
-        sed '23s/0/1/'
+        sed  -e 's|<td><p>1.Incorrect</p></td>|<td><p>1.Correct</p></td>|g' index.html -i
+        sed  -e 's|<td><p>1.0</p></td>|<td><p>1.</p></td>|g' index.html -i
 else
         :
 fi
