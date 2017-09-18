@@ -6,7 +6,7 @@ if [ -f /tmp/file1.txt ] 2> /dev/null
 then
         cd /var/www/html/ 
         sudo  sed  's/Task1. Incorrect/Task1. Correct/' index.html -i
-        sudo  sed   -e 's|Task1. 0|Task1. 1|g' index.html -i
+        sudo  sed  's|Task1. 0|Task1. 1|g' index.html -i
 else
         :
 fi
@@ -16,11 +16,25 @@ fi
 #This line is responsible for:
 #Task2.Create a directory called "docs" in /tmp folder
 #_______________________________________________________________________
-if [ -f /tmp/docs ] 2> /dev/null
+if [ -d /tmp/docs ] 2> /dev/null
 then
         cd /var/www/html/ 
         sudo  sed  's/Task2. Incorrect/Task2. Correct/' index.html -i
-        sudo  sed   -e 's|Task2. 0|Task2. 1|g' index.html -i
+        sudo  sed  's|Task2. 0|Task2. 1|g' index.html -i
+else
+        :
+fi
+#________________________________________________________________________
+
+
+#This line is responsible for:
+#Task 3. Get top 10 lines from /etc/services and save it under /tmp/saved.top	
+#_______________________________________________________________________
+if [ $(wc -l /tmp/saved.top |awk '{ print$1 }') == "10"  ] 2> /dev/null
+then
+        cd /var/www/html/ 
+        sudo  sed  's/Task3. Incorrect/Task3. Correct/' index.html -i
+        sudo  sed  's|Task3. 0|Task3. 1|g' index.html -i
 else
         :
 fi
