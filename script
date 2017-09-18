@@ -11,3 +11,17 @@ else
         :
 fi
 #________________________________________________________________________
+
+
+#This line is responsible for:
+#Task2.Create a directory called "docs" in /tmp folder
+#_______________________________________________________________________
+if [ -f /tmp/docs ] 2> /dev/null
+then
+        cd /var/www/html/ 
+        sudo  sed  's/Task2. Incorrect/Task2. Correct/' index.html -i
+        sudo  sed   -e 's|Task2. 0|Task2. 1|g' index.html -i
+else
+        :
+fi
+#________________________________________________________________________
