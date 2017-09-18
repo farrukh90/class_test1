@@ -1,4 +1,7 @@
 #!/bin/bash
+#This line is responsible for 
+#Task 1.Create empty file called "file1.txt" in /tmp folder
+#_______________________________________________________________________
 if [ -f /tmp/file1.txt ] 2> /dev/null
 then
         cd /var/www/html/ 
@@ -7,3 +10,4 @@ then
 else
         :
 fi
+#________________________________________________________________________
