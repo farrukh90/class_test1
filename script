@@ -2,8 +2,8 @@
 if [ -f /tmp/file1.txt ] 2> /dev/null
 then
         cd /var/www/html/ 
-        sed  -i -e 's|<td><p>Task1. Incorrect</p></td>|<td><p>Task1. Correct</p></td>|g' index.html 
-        sed  -i -e 's|<td><p>Task1. 0</p></td>|<td><p>Task1. 1</p></td>|g' index.html 
+        sed   -e 's|<td><p>Task1. Incorrect</p></td>|<td><p>Task1. Correct</p></td>|g' index.html  -i
+        sed   -e 's|<td><p>Task1. 0</p></td>|<td><p>Task1. 1</p></td>|g' index.html -i
 else
         :
 fi
